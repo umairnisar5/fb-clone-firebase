@@ -12,7 +12,7 @@ import { ExpandMoreOutlined } from '@material-ui/icons';
 
 function Sidebar() {
     return <div className="sidebar">
-        <SidebarRow src='https://avatars2.githubusercontent.com/u/59221584?s=400&u=fa2672a34b583ad3acf351c1976fc1e3b38795c6&v=4' title="Muhammad Talha" />
+        <SidebarRow src='https://avatars1.githubusercontent.com/u/49435408?s=400&u=8978e6768641e16d03253376914350d768d31065&v=4' title="Umair Nisar" />
         <SidebarRow Icon={LocalHospitalIcon} title="Covid-19 information center" />
         <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
         <SidebarRow Icon={PeopleIcon} title="Frieds" />
