@@ -11,13 +11,14 @@ import  AddIcon from "@material-ui/icons/Add";
 import  ForumIcon from "@material-ui/icons/Forum";
 import  NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import  ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
-
-
+import { useStateValue } from './StateProvider';
 
 
 
 function Header() {
+
+    const [{ user }, dispatch] = useStateValue();
+
     return  <div className="header">
          <div className="header__left">
              <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png" alt='facebook logo'/>
@@ -47,8 +48,8 @@ function Header() {
 
          <div className="header__right">
              <div className="header__info">
-                <Avatar />
-                <h4>Muhammad Talha</h4>
+                <Avatar src={user.photoURL} />
+                <h4>{user.displayName}</h4>
              </div>
              <IconButton>
                  <AddIcon />
@@ -69,4 +70,4 @@ function Header() {
     
 }
 
-export default Header;
+export default Header
