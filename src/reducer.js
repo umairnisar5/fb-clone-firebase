@@ -2,12 +2,12 @@ export const initialState = {
     user: null,
 };
 
-export const actionTtypes = {
+export const actionTypes = {
     SET_USER: "SET_USER",
 };
 const reducer = (state, action) => {
     switch (action.type) {
-        case actionTtypes.SET_USER:
+        case actionTypes.SET_USER:
             return {
                 ...state, 
                 user: action.user,
